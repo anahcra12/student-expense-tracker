@@ -34,12 +34,5 @@ The database connection is configured in `config/db.php` for the usual XAMPP def
 ## Main database table
 `transactions` stores the title, category, type, amount, date and optional notes for each transaction. The dashboard and report pages calculate totals using SQL aggregate functions such as `SUM()` and `GROUP BY`.
 
-## Beginner learning guide
-- Start with `config/db.php` to understand the database connection.
-- Read `add_transaction.php` to understand form submission, validation and INSERT queries.
-- Read `transactions.php` to understand SELECT queries and displaying records.
-- Read `edit_transaction.php` and `delete_transaction.php` for UPDATE and DELETE queries.
-- Read `dashboard.php` and `reports.php` to understand `SUM()`, `GROUP BY` and monthly date filtering.
-
 ## Notes
 This is a learning project, not a production financial service. It has no login or multi-user support. Add authentication, CSRF protection and stronger deployment configuration before hosting it publicly. Sample rows are included in the SQL file so the dashboard is not empty on first launch.
